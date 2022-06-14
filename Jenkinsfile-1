@@ -5,9 +5,11 @@ pipeline {
             steps {
                 sh 'From Stage 1 Step 1... Hello!..'
             }
-            steps {
-                echo "Stage 1 Step 2"
-            }
+        }
+        stage('Stage 2'){
+                steps {
+                 echo "Stage 1 Step 2"
+             }
         }
     }
 }
